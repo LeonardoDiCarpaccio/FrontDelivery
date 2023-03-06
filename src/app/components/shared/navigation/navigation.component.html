@@ -65,29 +65,30 @@
       </div>
       <div class="mt-5 flex-1 h-0 overflow-y-auto">
         <nav class="px-2 space-y-1">
-          <a href="#" routerLink="/" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-white group flex items-center px-2 py-2 text-base font-medium rounded-md">
+          <a routerLink="/" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-white group flex items-center px-2 py-2 text-base font-medium rounded-md">
             <!-- Heroicon name: outline/home -->
             <svg class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
             </svg>
-            Tableau de bord
+            Hacer un pedido
           </a>
   
-          <a href="#" routerLink="/media-library" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-indigo-100 group flex items-center px-2 py-2 text-base font-medium rounded-md">
+          <!-- <a routerLink="/media-library" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-indigo-100 group flex items-center px-2 py-2 text-base font-medium rounded-md">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
             </svg>
             Médiathèque
-          </a>
+          </a> -->
 
-          <a href="#" routerLink="/users" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-indigo-100 group flex items-center px-2 py-2 text-base font-medium rounded-md">
+          <a routerLink="/users" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-indigo-100 group flex items-center px-2 py-2 text-base font-medium rounded-md">
             <svg class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
             </svg>
-            Utilisateurs
+            Clientes
           </a>
       
         </nav>
+        
       </div>
     </div>
 
@@ -103,41 +104,103 @@
       <!-- Sidebar component, swap this element with another sidebar if you like -->
       <div class="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto">
         <div class="flex items-center flex-shrink-0 px-4">
-          <span style="    font-weight: 600;
+          <span style=" font-weight: 600;
     color: #fff;
     font-size: 1.8rem;
-    text-transform: uppercase;">Syneview</span>
+    ;">Phy SRL</span>
           <!--<img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-300-mark-white-text.svg" alt="Workflow">-->
         </div>
         <div class="mt-5 flex-1 flex flex-col">
           <nav class="flex-1 px-2 space-y-1">
             <!-- Current: "bg-indigo-800 text-white", Default: "text-indigo-100 hover:bg-indigo-600" -->
-            <a href="#" routerLink="/dashboard" [routerLinkActive]="'bg-indigo-800 text-white'" class=" text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+            <div >
+            <a routerLink="/dashboard" [routerLinkActive]="'bg-indigo-800 text-white'" 
+            class=" text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
               <!-- Heroicon name: outline/home -->
-              <svg class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              <svg class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
               </svg>
-              Tableau de bord
+              
+             DashBoard
             </a>
-     
-            <a href="#" routerLink="/media-library" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+          </div>
+          <div >
+            <a routerLink="/myorder" [routerLinkActive]="'bg-indigo-800 text-white'" 
+            class=" text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+              <!-- Heroicon name: outline/home -->
+              <svg class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+              </svg>
+              
+              Mis Pedido En Processo
+            </a>
+          </div>
+          <div >
+            <a routerLink="/myorder-archived" [routerLinkActive]="'bg-indigo-800 text-white'" 
+            class=" text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+              <!-- Heroicon name: outline/home -->
+              <svg class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+              </svg>
+              
+              Mis Pedido Terminados
+            </a>
+          </div>
+            <div *ngIf="role=='admin'" class="space-y-1">
+              <!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+              <button (click)="toggle()" type="button" 
+              class="text-indigo-100 hover:bg-indigo-600 group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              aria-controls="sub-menu-1" aria-expanded="false" >
+                <!-- Heroicon name: outline/users -->
+                <svg class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"></path>
+                </svg>
+                <span class="flex-1">
+                  Pedido
+                </span>
+                <!-- Expanded: "text-gray-400 rotate-90", Collapsed: "text-gray-300" -->
+                <svg class="text-white-300 ml-3 flex-shrink-0 h-5 w-5 transform group-hover:text-gray-400 transition-colors ease-in-out duration-150" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
+                </svg>
+              </button>
+              <!-- Expandable link section, show/hide based on state. -->
+              <div  *ngIf="Show" class="space-y-1" id="sub-menu-1">
+                <a routerLink="/order-waiting" class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600">
+                Recolectados                
+              </a>
+      
+                <a  routerLink="/order-approved" class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600">
+                  En Centro
+                </a>
+      
+                <a  routerLink="/order-travelling" class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600">
+                  En viaje
+                </a>
+                <a  routerLink="/order-history" class="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600">
+                  Entregados
+                </a>
+                
+              </div>
+            </div>
+            <!-- <a routerLink="/media-library" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
               <svg xmlns="http://www.w3.org/2000/svg" class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
               </svg>
               Médiathèque
-            </a>
-   
-            <a href="#" routerLink="/users" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+            </a> -->
+           <div *ngIf="role=='admin'">
+            <a  routerLink="/users" [routerLinkActive]="'bg-indigo-800 text-white'" class="text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
               <svg class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
-              Utilisateurs
+              Clientes
             </a>
+          </div>
           </nav>
         </div>
       </div>
       <div class="flex-shrink-0 flex border-t border-indigo-800 p-4">
-        <a href="#" class="flex-shrink-0 group block">
+        <a class="flex-shrink-0 group block">
           <div class="flex items-center">
             <div>
               <img class="inline-block h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=7qwKjEp7Xv&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
@@ -147,7 +210,7 @@
                 Tom Cook
               </p>
               <p class="text-sm font-medium text-indigo-200 group-hover:text-white">
-                View profile
+                Ver Perfil
               </p>
             </div>
           </div>
@@ -209,11 +272,11 @@
             -->
             <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
               <!-- Active: "bg-gray-100", Not Active: "" -->
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+              <a class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
 
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+              <a class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
 
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+              <a class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
             </div>
           </div>
         </div>

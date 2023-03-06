@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  color : "indigo"
+  color: 'indigo',
+  apiUrl: 'http://localhost:3000',
 };
 
 /*

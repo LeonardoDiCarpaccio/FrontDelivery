@@ -37,7 +37,7 @@
           </thead>
           <tbody>
           <tr *ngFor="let item of arrMainNgFor | filter:searchText" class="bg-white even:bg-gray-50">
-            <td *ngFor="let val of arrHeader;let i = index" [ngClass]="i === 0 ? 'font-medium text-gray-900' : 'text-sm text-gray-500'" class="px-6 py-4 whitespace-nowrap ">
+            <td *ngFor="let val of arrHeader;let i = index" [ngClass]="i === 0 || i === 1? 'font-medium text-gray-900' : 'text-sm text-gray-500'" class="px-6 py-4 whitespace-nowrap ">
               {{item[val.key]}}
             </td>
             <td  *ngIf="actions != null"class="px-6 py-4 whitespace-nowrap text-sm font-medium">

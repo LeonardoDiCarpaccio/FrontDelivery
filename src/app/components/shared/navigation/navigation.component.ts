@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { AuthService } from "src/app/services/auth.service";
 
 @Component({
     selector: "app-navigation",
@@ -7,11 +8,18 @@ import { Component, OnInit } from "@angular/core";
 })
 export class NavigationComponent implements OnInit {
     isSidebarOpen = true;
-    constructor() {}
-
-    ngOnInit(): void {}
+    constructor(private auth: AuthService) {}
+    role: any;
+    async ngOnInit() {
+        this.role = await this.auth.getRole();
+        console.log(this.role, "this.role");
+    }
+    Show: boolean = false;
 
     hideSidebar() {
         this.isSidebarOpen = false;
+    }
+    toggle() {
+        this.Show = !this.Show;
     }
 }
